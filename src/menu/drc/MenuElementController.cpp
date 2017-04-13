@@ -157,7 +157,7 @@ void MenuElementController::draw(CVideo *v){
     controllerConnected = 0;
     s32 found = ControllerPatcher::getActiveMappingSlot(getControllerType());
     if(found == -1){
-        name = "No device";
+        name = "No mando";
     }else{
         controllerConnected = 1;
 
@@ -166,7 +166,7 @@ void MenuElementController::draw(CVideo *v){
             if(info->type == CM_Type_Controller){
                 drawControllerName(v,info->vidpid.vid,info->vidpid.pid);
             }else if(info->type == CM_Type_RealController){
-                name = "Real Pro Controller";
+                name = "Pro Controller real";
             }else if(info->type == CM_Type_Mouse || info->type == CM_Type_Keyboard){
                 name = "Mouse / Keyboard";
             }

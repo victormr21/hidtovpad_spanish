@@ -27,19 +27,19 @@ MenuListDRC::MenuListDRC(s32 w, s32 h,MainWindowContent * _contentWindow)
     , contentWindow(_contentWindow)
     , width(w)
     , height(h)
-    , bgImageColor(w, h, (GX2Color){ 0, 0, 0, 0 })
-    , homeSeperator("Home")
-    , elementHome(  "Home", "homeIcon.png", ContentTemplate::CONTENT_HOME)
-    , controllerSeperator("Controller")
+    , bgImageColor(w, h, (GX2Color){ 51, 51, 51, 255 })
+    , homeSeperator("Inicio")
+    , elementHome(  "Inicio", "homeIcon.png", ContentTemplate::CONTENT_HOME)
+    , controllerSeperator("Mandos")
     , elementGamePad(UController_Type_Gamepad)
     , elementProController1(UController_Type_Pro1)
     , elementProController2(UController_Type_Pro2)
     , elementProController3(UController_Type_Pro3)
     , elementProController4(UController_Type_Pro4)
-    , otherSeperator("Other")
-    , elementHelp(  "Help",     "helpIcon.png", ContentTemplate::CONTENT_HELP)
+    , otherSeperator("Otros")
+    , elementHelp(  "Ayuda",     "helpIcon.png", ContentTemplate::CONTENT_HELP)
     , elementNetworkHelp(  "Network Client",     "netbtn.png", ContentTemplate::CONTENT_NETWORK_HELP)
-    , elementAbout( "About",    "aboutIcon.png", ContentTemplate::CONTENT_ABOUT)
+    , elementAbout( "Acerca de",    "aboutIcon.png", ContentTemplate::CONTENT_ABOUT)
     , buttonUpTrigger(GuiTrigger::CHANNEL_ALL, GuiTrigger::BUTTON_UP | GuiTrigger::STICK_L_UP, true)
     , buttonDownTrigger(GuiTrigger::CHANNEL_ALL, GuiTrigger::BUTTON_DOWN | GuiTrigger::STICK_L_DOWN, true)
     , touchTrigger(GuiTrigger::CHANNEL_1, GuiTrigger::VPAD_TOUCH)
@@ -47,11 +47,10 @@ MenuListDRC::MenuListDRC(s32 w, s32 h,MainWindowContent * _contentWindow)
     , VPADDrag(w,h)
     , wpadTouchTrigger(GuiTrigger::CHANNEL_2 | GuiTrigger::CHANNEL_3 | GuiTrigger::CHANNEL_4 | GuiTrigger::CHANNEL_5, GuiTrigger::BUTTON_A)
 {
-    bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 0);
-    bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 1);
-    bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 2);
-    bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 3);
-
+    bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 0);
+	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 1);
+	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 2);
+	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 3);
     append(&bgImageColor);
 
     listAppend(&homeSeperator);
