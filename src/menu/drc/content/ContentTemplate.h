@@ -34,10 +34,10 @@ public:
     ContentTemplate() : GuiFrame(1280-450-2, 720)
     , bgImageColor(828, 720, (GX2Color){ 0, 0, 0, 0 })
     {
-        bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 0);
-		bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 1);
-		bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 2);
-        bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 3);
+        bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 0);
+		bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 1);
+		bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 2);
+		bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 3);
         append(&bgImageColor);
     }
 
