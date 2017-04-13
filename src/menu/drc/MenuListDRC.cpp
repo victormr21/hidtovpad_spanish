@@ -27,7 +27,7 @@ MenuListDRC::MenuListDRC(s32 w, s32 h,MainWindowContent * _contentWindow)
     , contentWindow(_contentWindow)
     , width(w)
     , height(h)
-    , bgImageColor(w, h, (GX2Color){ 51, 51, 51, 255 })
+    , bgImageColor(w, h, (GX2Color){ 0, 0, 0, 0 })
     , homeSeperator("Inicio")
     , elementHome(  "Inicio", "homeIcon.png", ContentTemplate::CONTENT_HOME)
     , controllerSeperator("Mandos")
@@ -47,10 +47,10 @@ MenuListDRC::MenuListDRC(s32 w, s32 h,MainWindowContent * _contentWindow)
     , VPADDrag(w,h)
     , wpadTouchTrigger(GuiTrigger::CHANNEL_2 | GuiTrigger::CHANNEL_3 | GuiTrigger::CHANNEL_4 | GuiTrigger::CHANNEL_5, GuiTrigger::BUTTON_A)
 {
-    bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 0);
-	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 1);
-	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 2);
-	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 3);
+    bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 0);
+	bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 1);
+	bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 2);
+	bgImageColor.setImageColor((GX2Color){  255, 255, 255, 255 }, 3);
     append(&bgImageColor);
 
     listAppend(&homeSeperator);

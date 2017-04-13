@@ -30,10 +30,10 @@ MainWindowContent::MainWindowContent(s32 w, s32 h)
     , plusbutton_img(plusbutton_imgdata)
     , exitPlus("Aplicar cambios")
 {
-    bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 0);
-	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 1);
-    bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 2);
-	bgImageColor.setImageColor((GX2Color){  51, 51, 51, 255 }, 3);
+    bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 0);
+	bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 1);
+	bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 2);
+	bgImageColor.setImageColor((GX2Color){  248, 249, 248, 255 }, 3);
 
     
 	homebutton_img.setPosition(-70,0);
