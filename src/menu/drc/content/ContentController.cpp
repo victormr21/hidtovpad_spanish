@@ -26,18 +26,18 @@ ContentController::ContentController(UController_Type controller_type_): Content
     , proinput(controller_type_)
     , connectedFrame(1280-450-2,720)
     , notConnectedFrame(1280-450-2,720)
-    , notConnectedLabel("Currently no device is connected.")
+    , notConnectedLabel("Actualmente ningún dispositivo está conectado.")
     , notConnectedLabel2("")
     , not_connected_imgdata(Resources::GetImageData("not_connected.png"))
     , not_connected_img(not_connected_imgdata)
-    , connectedLabel("Device connected. You can test it by pressing buttons.")
-    , connectedLabel2("Press A to remap to a new controller.")
-    , mouseConnectedLabel("Mouse connected. You can test it by pressing buttons.")
-    , keyboardConnectedLabel("Keyboard connected. You can test it by pressing buttons.")
-    , mouseConnectedLabel2("Press X to add a Keyboard.")
-    , keyboardConnectedLabel2("Press X to add a Mouse.")
-    , mouseConnectedLabel3("Keyboard connected.")
-    , keyboardConnectedLabel3("Mouse connected.")
+    , connectedLabel("Dispositivo conectado. Puedes probarlo pulsando los botones.")
+    , connectedLabel2("Pulsa A para emular un nuevo mando.")
+    , mouseConnectedLabel("Ratón conectado. Puedes probarlo pulsando los botones.")
+    , keyboardConnectedLabel("Teclado conectado. Puedes probarlo pulsando los botones.")
+    , mouseConnectedLabel2("Pulsa X para añadir un teclado.")
+    , keyboardConnectedLabel2("Pulsa X para añadir un ratón.")
+    , mouseConnectedLabel3("Teclado conectado.")
+    , keyboardConnectedLabel3("Ratón conectado.")
 {
     std::string text("");
     switch(controller_type){
@@ -48,7 +48,7 @@ ContentController::ContentController(UController_Type controller_type_): Content
         case UController_Type_Pro4: { text = "Pro Controller 4"; break; }
         default: break;
     }
-    notConnectedLabel2.setText(strfmt("Press A to map a controller to \"%s\".",text.c_str()).c_str());
+    notConnectedLabel2.setText(strfmt("Pulsa A para emular un \"%s\".",text.c_str()).c_str());
 
     headLine.setText(text.c_str());
     headLine.setFontSize(50);

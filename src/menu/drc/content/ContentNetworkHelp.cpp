@@ -36,14 +36,14 @@ ContentNetworkHelp::ContentNetworkHelp(): ContentTemplate(){
     s32 fontSize2 = 24;
     glm::vec4 textColor = glm::vec4(0.3f,0.3f,0.3f,1.0f);
 
-    text = new GuiText("What is the Network Client?", fontSize, textColor);
+    text = new GuiText("¿Qué es el Network Client?", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
 
     positionY -= 35;
-    text = new GuiText("It allows you to use your controller connected to your Computer with", fontSize2, textColor);
+    text = new GuiText("te permite usar tu mando conectado a tu ordenador con", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
@@ -51,42 +51,42 @@ ContentNetworkHelp::ContentNetworkHelp(): ContentTemplate(){
     positionY -= 25;
 
 
-    text = new GuiText("HID to VPAD. This way for example XInput- and HID-Bluetooth-Devices", fontSize2, textColor);
+    text = new GuiText("HID to VPAD. Así por ejemplo XInput- y HID-Bluetooth-Devices", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 25;
 
-    text = new GuiText("can be used. It connects to your console over your local network.", fontSize2, textColor);
+    text = new GuiText("pueden usarse. Esto conecta tu consola con tu network local.", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 35;
 
-     text = new GuiText("How do I use it?", fontSize, textColor);
+     text = new GuiText("¿Cómo lo uso?", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("Enter the IP (upper right corner!) of your console and press connect.", fontSize2, textColor);
+    text = new GuiText("Introduce la IP (esquina superior derecha) de tu WiiU y pulsa connect.", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 25;
 
-    text = new GuiText("If everything worked correctly, use the controller just like one", fontSize2, textColor);
+    text = new GuiText("Si todo funciono bien, usa el mando como cualquier otro", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 25;
 
-    text = new GuiText("connected via USB. You can find a detailed guide here:", fontSize2, textColor);
+    text = new GuiText("conectado por USB. Puedes encontrar una guía detallada aquí:", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
@@ -102,42 +102,42 @@ ContentNetworkHelp::ContentNetworkHelp(): ContentTemplate(){
 
 
 
-    text = new GuiText("Is there any input lag?", fontSize, textColor);
+    text = new GuiText("¿Hay algún lag?", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("With a connection via Ethernet, you shouldn't notice any lag.", fontSize2, textColor);
+    text = new GuiText("Con una conexión por Ethernet, no deberías de notarlo.", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 25;
 
-    text = new GuiText("Wi-Fi may lead to some issues or lag, but it heavily depends on the", fontSize2, textColor);
+    text = new GuiText("Wi-Fi a veces da algunos problemas o lag, pero depende de la", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 25;
 
-    text = new GuiText("quality of your signal. If it's possible, connect everything via Ethernet.", fontSize2, textColor);
+    text = new GuiText("calidad de tu señal. Si es posible, conecta todo por Ethernet.", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("Where can I get it?", fontSize, textColor);
+    text = new GuiText("¿Dónde puedo conseguirlo?", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);
     append(text);
 
     positionY -= 35;
-    text = new GuiText("It's open source and you can find it here: ", fontSize2, textColor);
+    text = new GuiText("Es de código abierto y puedes encontrarlo aquí:", fontSize2, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     helpText.push_back(text);

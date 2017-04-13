@@ -17,7 +17,7 @@
 #include "ContentAbout.h"
 
 ContentAbout::ContentAbout(): ContentTemplate(){
-    headLine.setText("About");
+    headLine.setText("Acerca de");
     headLine.setFontSize(50);
     headLine.setAlignment(ALIGN_TOP_CENTER);
     headLine.setPosition(0,-110);
@@ -32,10 +32,10 @@ ContentAbout::ContentAbout(): ContentTemplate(){
     f32 positionX2 = 250.0f;
     f32 positionX3 = 80.0f;
 
-    s32 fontSize = 28;
+    s32 fontSize = 24;
     glm::vec4 textColor = glm::vec4(0.3f,0.3f,0.3f,1.0f);
 
-    text = new GuiText("Coding:", fontSize, textColor);
+    text = new GuiText("Código:", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
@@ -48,20 +48,20 @@ ContentAbout::ContentAbout(): ContentTemplate(){
     append(text);
     positionY -= 35;
 
-    text = new GuiText("Coding help:", fontSize, textColor);
+    text = new GuiText("Ayuda código:", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
 
-    text = new GuiText("QuarkTheAwesome and skidau", fontSize, textColor);
+    text = new GuiText("QuarkTheAwesome y Skidau", fontSize, textColor);
     text->setPosition(positionX2, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("Design:", fontSize, textColor);
+    text = new GuiText("Diseño:", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
@@ -72,37 +72,50 @@ ContentAbout::ContentAbout(): ContentTemplate(){
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
-    positionY -= 50;
+    positionY -= 35;
 
-    text = new GuiText("Used graphics:", fontSize, textColor);
+    text = new GuiText("Traducción:", fontSize, textColor);
+    text->setPosition(positionX, positionY);
+    text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
+    aboutText.push_back(text);
+    append(text);
+    
+	text = new GuiText("Victormr21", fontSize, textColor);
+    text->setPosition(positionX2, positionY);
+    text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
+    aboutText.push_back(text);
+    append(text);
+	positionY -= 50;
+	
+	text = new GuiText("Gráficos usados:", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("github,Wii U gamepad icon by flaticon (flaticon.com)", fontSize, textColor);
+    text = new GuiText("Github, icono Wii U GamePad de flaticon (flaticon.com)", fontSize, textColor);
     text->setPosition(positionX3, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("twitter icon by freepik  (flaticon.com)", fontSize, textColor);
+    text = new GuiText("Icono Twitter de freepik (flaticon.com)", fontSize, textColor);
     text->setPosition(positionX3, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("WiiU pro controller icon by flaticon (freepik.com)", fontSize, textColor);
+    text = new GuiText("Icono WiiU Pro Controller de flaticon (freepik.com)", fontSize, textColor);
     text->setPosition(positionX3, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 50;
 
-    text = new GuiText("Music:", fontSize, textColor);
+    text = new GuiText("Música:", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
@@ -117,7 +130,7 @@ ContentAbout::ContentAbout(): ContentTemplate(){
     positionY -= 35;
 
     text = new GuiText("Licensed under Creative Commons: By Attribution 3.0 License", fontSize, textColor);
-    text->setPosition(positionX -17, positionY);
+    text->setPosition(positionX -20, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
@@ -130,21 +143,21 @@ ContentAbout::ContentAbout(): ContentTemplate(){
     append(text);
     positionY -= 50;
 
-    text = new GuiText("Big thanks to everyone who contributed to the WiiU Scence ", fontSize, textColor);
-    text->setPosition(positionX, positionY);
+    text = new GuiText("Muchas gracias a los que contribuyen en la scene de WiiU", fontSize, textColor);
+    text->setPosition(positionX -23, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 35;
 
-    text = new GuiText("Thanks to FIX94 for the inital code/idea.", fontSize, textColor);
+    text = new GuiText("Gracias a FIX94 por el código/idea inicial", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
     append(text);
     positionY -= 40;
 
-    text = new GuiText("Special thanks to dimok.", fontSize, textColor);
+    text = new GuiText("Gracias especialmente a Dimok", fontSize, textColor);
     text->setPosition(positionX, positionY);
     text->setAlignment(ALIGN_LEFT | ALIGN_MIDDLE);
     aboutText.push_back(text);
